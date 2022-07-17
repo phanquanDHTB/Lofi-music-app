@@ -231,7 +231,6 @@ const Home = () => {
 
         <div className="absolute top-[300px] hidden">
           <audio
-            autoPlay
             ref={audioRef}
             src={listAudios[audio].src}
             onEnded={() => {
