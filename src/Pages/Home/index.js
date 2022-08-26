@@ -95,11 +95,15 @@ const Home = () => {
               />
             </button>
           </div>
-          <img
-            className="w-[40px] h-[40px] rounded-full ml-[20px]"
-            alt=""
-            src={quan}
-          />
+          <a href="https://www.facebook.com/thaithuong.laoquan.35">
+            {" "}
+            <img
+              className="w-[35px] h-[35px] rounded-full ml-[20px]"
+              alt=""
+              src={quan}
+            />
+          </a>
+
           <div
             className="absolute text-center opacity-[0.7] z-6 w-[55px] h-[115px] rounded-full top-[200px]
         left-[50px] border-[red] bg-[white]"
@@ -151,7 +155,7 @@ const Home = () => {
           </div>
         </div>
         <video
-          className={`absolute w-[100vw] h-[100vh] object-cover ${
+          className={`absolute w-[100vw] h-[100vh] object-cover duration-[1s] ${
             day && !rain ? "opacity-1" : "opacity-0"
           }`}
           loop
@@ -162,7 +166,7 @@ const Home = () => {
         </video>
 
         <video
-          className={`absolute top-0 w-[100vw] h-[100vh] object-cover ${
+          className={`absolute top-0 w-[100vw] h-[100vh] object-cover duration-[1s] ${
             !day && !rain ? "opacity-1" : "opacity-0"
           }`}
           loop
@@ -173,7 +177,7 @@ const Home = () => {
         </video>
 
         <video
-          className={`absolute top-0 w-[100vw] h-[100vh] object-cover ${
+          className={`absolute top-0 w-[100vw] h-[100vh] object-cover duration-[1s] ${
             day && rain ? "opacity-1" : "opacity-0"
           }`}
           loop
@@ -184,7 +188,7 @@ const Home = () => {
         </video>
 
         <video
-          className={`absolute top-0 w-[100vw] h-[100vh] object-cover ${
+          className={`absolute top-0 w-[100vw] h-[100vh] object-cover duration-[1s] ${
             !day && rain ? "opacity-1" : "opacity-0"
           }`}
           loop
